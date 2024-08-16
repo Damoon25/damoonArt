@@ -1,0 +1,1653 @@
+/* FONTS */
+
+/* montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+/* Nunito Sans */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+/* raleway */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* VARIABLES */
+
+:root {
+  --title-color: #231f20;
+  --font-nav: "Montserrat", sans-serif;
+  --font-title: "Nunito Sans", sans-serif;
+  --font-text: "Raleway", sans-serif;
+  --section2: #f7f7f7;
+  --login: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  --color1: #d41131;
+  --color1b: rgba(11, 36, 27, 0.4);
+  --color2: #4dc3a4;
+  --color3: #949494;
+  --text: #ffffff;
+  --text-link: #5f6a70;
+  --text-parrafo: #231f20;
+  --text-footer: #2b2828;
+  --link: #ffffff;
+  --bg-card-header: rgb(248, 248, 248);
+  --validado: rgb(78, 223, 83);
+  --warning-color: #c7ba02;
+  --excel-btn: #198754;
+  --pdf-btn: #a9291d;
+  --procesado: rgb(100, 213, 104);
+  --sinProcesar: #f5ea53;
+  --danger-color: #a91327;
+  --modify-color: #13b32b;
+}
+
+.bt-container {
+  font-family: "Space Mono", monospace;
+  max-height: 68px;
+  overflow: hidden;
+  margin: 0;
+  color: #fff;
+  background-color: #111420;
+}
+
+ul#bt {
+  margin-bottom: 0;
+  list-style-type: none;
+  font-size: 0.65rem;
+}
+
+ul#bt li {
+  border-left: 1px solid #353a46;
+  border-right: 1px solid #353a46;
+  padding: 5px 20px 0 20px;
+  min-width: 155px;
+}
+
+ul#bt li div:nth-child(2) {
+  font-family: "Space Mono", monospace;
+  font-weight: 800;
+  padding-top: 3px;
+  padding-bottom: 25px;
+}
+
+ul#bt li div:nth-child(2) span:first-child {
+  font-size: 1.25rem;
+}
+
+ul#bt li div:nth-child(2) span:first-child i {
+  padding-right: 5px;
+  font-size: 1.55rem;
+}
+
+ul#bt li div:nth-child(2) span:nth-child(2) {
+  margin-left: 10px;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table>tbody>tr>td {
+  vertical-align: middle !important;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* NAVBAR MENU*/
+
+.custom-banner {
+  background-color: var(--color1) !important;
+  color: var(--link) !important;
+}
+
+.custom-banner .text-white {
+  color: var(--link) !important;
+}
+
+.custom-banner .social-media a {
+  margin-left: 10px !important;
+  color: var(--link) !important;
+  text-decoration: none;
+  font-size: 24px !important;
+}
+
+.custom-banner .social-media a:hover {
+  color: var(--link) !important;
+}
+
+.fa-instagram {
+  font-size: 22px !important;
+}
+
+.fa-facebook-f {
+  font-size: 22px !important;
+}
+
+.fa-phone {
+  font-size: 22px !important;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  width: 100%;
+}
+
+.nav {
+  width: 100%;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.navbar-nav .nav-link.active {
+  color: #fff;
+  /* Cambia el color del texto para resaltar el enlace activo */
+  font-weight: bold;
+  /* Opcional: resalta el enlace activo con una fuente más pesada */
+}
+
+.offcanvas {
+  background-color: var(--color1) !important;
+}
+
+.nav-link {
+  font-size: 25px !important;
+  padding-top: 3px !important;
+  padding-bottom: 3px !important;
+}
+
+@media (min-width: 992px) {
+  .menu li {
+    float: left;
+  }
+}
+
+/**/
+
+body {
+  font-family: "Space Mono", monospace !important;
+}
+
+.home {
+  background-color: var(--link) !important;
+}
+
+#logo {
+  width: 50% !important;
+  border: none;
+}
+
+#logo2 {
+  width: 30% !important;
+  border: none;
+}
+
+.navbar {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  background-color: var(--color1) !important;
+}
+
+.navbar-brand {
+  padding: 0px !important;
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+  margin-bottom: 10px !important;
+}
+
+.header {
+  transition: top 0.3s;
+  /* Transición suave para el cambio de posición */
+  position: fixed;
+  top: -150px;
+  /* Encabezado inicialmente oculto */
+  width: 100%;
+  z-index: 1000;
+  /* Ajusta el valor de z-index según sea necesario */
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+  color: var(--text) !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: #1c9bd7;
+}
+
+/* NAVBAR */
+
+.btnMenu {
+  background-color: transparent !important;
+  border: transparent !important;
+}
+
+.btnTurnos {
+  border: 1px solid transparent !important;
+  border-radius: 25px !important;
+  background-color: var(--color1) !important;
+}
+
+.menu {
+  width: 45px !important;
+  max-width: none !important;
+}
+
+#btn_atras {
+  display: block;
+  color: var(--link) !important;
+  font-size: 35px !important;
+  margin-bottom: 20px;
+  max-width: none !important;
+}
+
+.textoNav {
+  transition: ease 0.5s;
+  color: var(--link);
+  font-weight: 600;
+  font-size: 18px !important;
+}
+
+.textoNav:hover {
+  color: #ffffff;
+}
+
+.btnAccesoLoginMobile {
+  transition: ease 0.5s;
+  width: 100% !important;
+  height: 45px !important;
+  background-color: var(--text-footer) !important;
+  border-color: transparent;
+  color: #e7f0fd !important;
+  padding: 15px !important;
+  font-size: 15px !important;
+}
+
+.btnAccesoLoginMobile:hover {
+  background-color: var(--text-footer) !important;
+  color: var(--text) !important;
+  font-weight: bold;
+}
+
+/* ADMINISTRADOR */
+
+.card-login {
+  background: var(--color4) !important;
+  width: 18rem !important;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  border-radius: 30px !important;
+}
+
+.body-login {
+  padding: 10px !important;
+}
+
+.header-login {
+  background-color: var(--color1) !important;
+  border: 1px solid transparent !important;
+  border-radius: 20px !important;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+.boton-Login {
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  color: var(--color1) !important;
+  background-color: var(--color2) !important;
+}
+
+.boton-Register {
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  background-color: #ffff !important;
+  color: var(--color1) !important;
+}
+
+#register {
+  border: 1px solid var(--color1);
+  background: none !important;
+  color: var(--color1) !important;
+}
+
+#login {
+  color: var(--link) !important;
+}
+
+#basic-addon1 {
+  background-color: var(--color1) !important;
+  color: var(--link) !important;
+}
+
+#basic-addon2 {
+  background-color: var(--color1) !important;
+  color: var(--link) !important;
+}
+
+#basic-addon3 {
+  background-color: var(--color1) !important;
+  color: var(--link) !important;
+}
+
+.backgroundLogin {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center !important;
+  display: flex !important;
+  justify-content: center !important;
+  background-color: var(--color3) !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#logoAdmin {
+  border: transparent;
+  width: 80%;
+  padding: 30px !important;
+}
+
+.containerLogin {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.dropdown-menu {
+  background-color: var(--color2) !important;
+  color: var(--link) !important;
+}
+
+.dropdown-menu .dropdown-item {
+  transition: background-color 0.3s ease, font-weight 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: var(--color1) !important;
+  font-weight: bold !important;
+}
+
+.btnAdmin {
+  color: #ffff !important;
+  border: 1px solid;
+  font-weight: normal;
+  background: var(--color1) !important;
+  transition: ease 4s all;
+}
+
+.btnAdmin:hover {
+  color: var(--fondo1) !important;
+  border: 2px solid !important;
+  font-weight: normal !important;
+  background: #ffff !important;
+  font-weight: bold !important;
+}
+
+.table {
+  background-color: var(--color3) !important;
+}
+
+.form-control {
+  font-family: "Raleway", sans-serif !important;
+  font-size: 14px !important;
+  color: var(--color5) !important;
+  border: none !important;
+  border-radius: 0px !important;
+  background-color: transparent !important;
+  border-bottom: 0.5px solid var(--link) !important;
+}
+
+.form-control ::placeholder {
+  color: var(--color5) !important;
+}
+
+.form-select {
+  background-color: transparent !important;
+  border: 0px !important;
+  border-bottom: 1px solid var(--link) !important;
+}
+
+.form-select ::selection {
+  color: var(--link) !important;
+}
+
+.form-select option {
+  font-family: "Raleway", sans-serif !important;
+  font-size: 14px !important;
+  color: var(--color5) !important;
+  background-color: var(--color3) !important;
+  border: 0px !important;
+  border-bottom: 1px solid var(--link) !important;
+}
+
+.custom-input {
+  color: var(--color5) !important;
+}
+
+.form-check-label {
+  color: var(--color5) !important;
+}
+
+.fa-solid {
+  font-size: x-large !important;
+  color: var(--boton-color) !important;
+  margin: 10px !important;
+}
+
+.tituloAdmin {
+  color: var(--fondo1);
+  font-size: 20px !important;
+  font-weight: bold;
+}
+
+/*-----------------------------*/
+
+.textoNav1 {
+  transition: ease 0.5s;
+  color: var(--link) !important;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.textoNav1:hover {
+  color: var(--link) !important;
+  font-weight: bold;
+}
+
+.btn-nav {
+  border-color: var(--link) !important;
+  border: none !important;
+  padding: 0px !important;
+  transition: border 1s ease !important;
+}
+
+.btn-nav:hover {
+  border: 1px solid var(--link) !important;
+  background-color: transparent !important;
+  color: #ffffff;
+}
+
+.btn-nav a {
+  text-decoration: none;
+  color: var(--link) !important;
+}
+
+.navbar .nav-item:not(:last-child) {
+  margin-right: 22px;
+}
+
+/* BOTONES */
+
+#flecha {
+  color: var(--fondo1) !important;
+  font-size: 40px !important;
+}
+
+.btnAccesoLogin {
+  transition: ease 0.5s;
+  width: 100% !important;
+  height: 25px !important;
+  background-color: var(--title-color) !important;
+  border-color: transparent;
+  color: #e7f0fd !important;
+  padding: 5px !important;
+  font-size: 13px !important;
+}
+
+.btnAccesoLogin:hover {
+  background-color: var(--parrafo-color) !important;
+  color: var(--text) !important;
+  font-weight: bold;
+}
+
+/* HOME */
+
+.paddingBottom {
+  padding-bottom: 5% !important;
+}
+
+.paddingTop {
+  padding-top: 5% !important;
+}
+
+.portadaHome {
+  background-image: url("../img/imgCovers/portada_home1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px !important;
+}
+
+.portadaContact {
+  background-image: url("../img/imgCovers/IMG-COVER-CONTACT.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto !important;
+}
+
+.containerContact {
+  background-color: var(--link) !important;
+  border: 1px solid var(--link) !important;
+  border-radius: 50px !important;
+  height: auto !important;
+}
+
+.imgContact {
+  border: 1px solid transparent !important;
+  border-bottom-left-radius: 50px !important;
+  border-top-left-radius: 50px !important;
+}
+
+.portadaQuienesSomos {
+  background-image: url("../img/imgCovers/portada_home1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px !important;
+}
+
+.imgQuienesSomos {
+  border: 1px solid transparent !important;
+  border-radius: 50px !important;
+}
+
+.portadaProfesionales {
+  background-image: url("../img/imgCovers/portada_home1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px !important;
+}
+
+.imgProfesional {
+  width: 80% !important;
+  /* Ajusta el ancho de la imagen */
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  /* Sombra inicial */
+  max-width: 100% !important;
+  /* Asegura que la imagen no desborde su contenedor */
+  height: auto;
+  position: relative;
+  /* Necesario para el pseudo-elemento */
+  border: 0;
+  /* Sin borde inicial */
+  transition: transform 1s ease, box-shadow 0.3s ease;
+  /* Añade transición suave */
+}
+
+
+.imgProfesional:hover {
+  transform: scale(1.05);
+  /* Escala la imagen al pasar el cursor */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+  border: 8px solid var(--color2) !important;
+  /* Aumenta la sombra para un efecto más prominente */
+}
+
+
+/* CSS para el texto y la imagen */
+@media (min-width: 768px) {
+  .text-div-slide {
+    opacity: 0;
+    transform: translateY(10px);
+    /* Ajusta el desplazamiento */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    /* Duración de la transición */
+  }
+
+  .imgProfesional {
+    transition: transform 0.5s ease;
+  }
+}
+
+@media (max-width: 767px) {
+  .text-div-slide {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+.text-div-slide {
+  max-width: 100% !important;
+  /* Asegura que el texto no desborde su contenedor */
+}
+
+.divTextHome {
+  padding-top: 20% !important;
+}
+
+.icon {
+  width: 10% !important;
+  margin: 5px !important;
+}
+
+.iconFooter {
+  width: 10% !important;
+  padding: 0px !important;
+}
+
+.titleSection {
+  font-family: var(--font-title) !important;
+  font-weight: 500;
+  font-size: 25px !important;
+  color: var(--text-link) !important;
+}
+
+.titleSection2 {
+  margin-top: 5% !important;
+  font-family: var(--font-title) !important;
+  font-weight: 500;
+  font-size: 30px !important;
+  color: var(--text-footer) !important;
+}
+
+.titleContact {
+  font-family: "Cinzel", serif !important;
+  font-weight: 600;
+  font-size: 65px !important;
+  color: var(--link) !important;
+}
+
+.titleSectionWhite {
+  font-family: "Cinzel", serif !important;
+  font-weight: 400;
+  font-size: 35px !important;
+  color: var(--text) !important;
+}
+
+.paddingHome {
+  position: absolute !important;
+  bottom: 0 !important;
+}
+
+.textPrincipalHome {
+  font-family: var(--font-title) !important;
+  color: var(--link) !important;
+  font-size: 35px !important;
+  font-weight: 600 !important;
+  line-height: 48px !important;
+}
+
+.textPrincipalBio {
+  font-family: "Cinzel", serif !important;
+  color: var(--link) !important;
+  font-size: 28px !important;
+  font-weight: 600 !important;
+  line-height: 40px !important;
+}
+
+/* --------- */
+
+/* CARD GALLERY */
+
+.card-img-top {
+  width: 100%;
+  border-radius: 0px !important;
+  margin: 0px !important;
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+
+.btn-primary {
+  background-color: var(--color1);
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.btn-primary i {
+  margin-right: 5px;
+}
+
+.card-title {
+  margin-top: 10px !important;
+  color: var(--title-color) !important;
+  font-family: "Cinzel", serif !important;
+  font-size: 25px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: 110% !important;
+}
+
+.card-body {
+  padding: 0px !important;
+}
+
+.card {
+  padding: 0px !important;
+  margin: 0px !important;
+  max-width: 35rem !important;
+  max-height: 60rem !important;
+  margin-bottom: 10% !important;
+  background-color: transparent !important;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.custom-card2 {
+  border: none !important;
+  border-bottom-right-radius: 100px !important;
+  border-bottom-left-radius: 0px !important;
+  background-color: transparent !important;
+}
+
+.titleModal {
+  font-family: var(--font-title) !important;
+  font-weight: 500;
+  font-size: 30px !important;
+  color: var(--link) !important;
+}
+
+.fixed-dimensions {
+  width: 100%;
+  /* Ajusta al ancho del contenedor o define un valor fijo */
+  height: 280px;
+  /* Ajusta a la altura deseada */
+  object-fit: cover;
+  /* Mantiene la proporción de la imagen y la recorta si es necesario */
+  border-radius: 10px;
+  /* Opcional: redondea los bordes de la imagen */
+}
+
+.custom-body2 {
+  background-color: var(--color2) !important;
+  border: 12px solid var(--color1) !important;
+  height: 15rem !important;
+  border-top: 0px !important;
+  border-right: 0px !important;
+  border-radius: 25px !important;
+  border-top-right-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+  border-bottom-right-radius: 100px !important;
+  border-bottom-left-radius: 0px !important;
+  position: relative !important;
+}
+
+.truncated-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.custom-modal {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: var(--color2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  font-family: inherit;
+  /* Usa la misma fuente que el resto de tu página */
+}
+
+.custom-modal img {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-modal-button {
+  background-color: var(--color1) !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  display: flex;
+  padding: 6px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px !important;
+  border: 1px solid var(--color1) !important;
+  color: var(--link) !important;
+  transition: background-color 0.3s ease, border-color 0.3s ease !important;
+}
+
+.custom-modal-button:hover {
+  background-color: var(--link) !important;
+  color: var(--color2) !important;
+  /* Usa una versión más oscura de --link si la tienes definida */
+}
+
+.custom-card {
+  background-color: var(--color2) !important;
+  height: 23rem !important;
+  border: 15px solid var(--color1) !important;
+  border-top: 0px !important;
+  border-right: 0px !important;
+  border-radius: 25px !important;
+  border-bottom-right-radius: 100px !important;
+  position: relative;
+}
+
+.custom-card::before {
+  content: "" !important;
+  position: absolute !important;
+  top: -8px !important;
+  left: -8px !important;
+  right: -8px !important;
+  bottom: -8px !important;
+  border: 8px solid var(--color1) !important;
+  border-radius: 20px !important;
+  pointer-events: none !important;
+}
+
+.card-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-text {
+  color: var(--link) !important;
+  font-family: "Nunito Sans", sans-serif !important;
+  font-size: 25px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: 110% !important;
+}
+
+/* --------- */
+
+/* CAROUSEL GALLERY */
+
+.carousel {
+  border-radius: 15px;
+  /* Redondea los bordes del carrusel */
+  overflow: hidden;
+  /* Asegura que las imágenes se ajusten dentro del contenedor redondeado */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  /* Agrega sombra para darle un efecto de profundidad */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Fondo semi-transparente para los íconos de navegación */
+  border-radius: 50%;
+  /* Redondea los botones de navegación */
+  padding: 10px;
+  /* Aumenta el área de clic de los botones */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  /* Ajusta el ancho de los botones de navegación */
+}
+
+.carousel-item img {
+  border-radius: 15px;
+  /* Asegura que las imágenes también tengan bordes redondeados */
+}
+
+/* --------- */
+
+.boton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #0056b3;
+}
+
+/* MODAL PAGO */
+
+.mercadoPago {
+  width: 30px !important;
+}
+
+.btnClose {
+  background-color: var(--color1) !important;
+  border: 1px solid !important;
+  border-color: var(--color1) !important;
+  border-radius: 50% !important;
+  padding: 5px !important;
+  margin: 0px !important;
+}
+
+.modal-header {
+  background-color: var(--color1);
+  text-align: center !important;
+}
+
+.modal-title {
+  margin-top: 10px !important;
+  color: var(--title-color) !important;
+  font-family: var(--font-nav) !important;
+  font-size: 22px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: 110% !important;
+}
+
+/* Quitar las flechas del input number */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.title1 {
+  color: var(--text-parrafo) !important;
+  font-family: "Nunito Sans", sans-serif !important;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.titleWhite {
+  color: var(--link);
+  font-family: "Nunito Sans";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.text1 {
+  color: var(--text-parrafo) !important;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.subText {
+  color: var(--text-parrafo) !important;
+  font-family: "Raleway", sans-serif;
+  font-size: 22px !important;
+  font-style: normal !important;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.textProfesional {
+  color: var(--text-parrafo) !important;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px !important;
+  font-style: normal !important;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.subTextWhite {
+  color: var(--link) !important;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.minText {
+  color: var(--parrafo-color) !important;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.textLink {
+  color: var(--text-link) !important;
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  text-decoration: underline !important;
+}
+
+#precioProducto strong {
+  font-weight: bold;
+}
+
+.bg-custom1 {
+  background-color: var(--section2) !important;
+}
+
+.bg-custom2 {
+  background-color: var(--color2) !important;
+}
+
+#btnPrev {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+#btnNext {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.share-menu {
+  border-top: 1px solid var(--title-color) !important;
+  border-bottom: 1px solid var(--title-color) !important;
+  padding: 5px 0;
+}
+
+.iconShare {
+  border-radius: 64px !important;
+  background-color: var(--title-color) !important;
+  margin: 3px !important;
+  padding: 5px !important;
+}
+
+.sectionImage3 {
+  background-color: var(--color1) !important;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+/* FOOTER */
+
+#footer {
+  margin-top: 0px !important;
+  background-color: var(--color2) !important;
+}
+
+.contact-info .address-text {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 5px;
+  /* Ajusta este valor para alinear el texto con el icono */
+}
+
+.contact-info .address-line {
+  display: block;
+  margin-left: .5rem;
+  /* Ajusta este valor para alinear la segunda línea con la primera */
+}
+
+
+.thin-white-line {
+  border: none;
+  border-top: 2px solid var(--text-link) !important;
+  margin-bottom: 10px !important;
+  margin-top: 10px !important;
+  width: 100%;
+  opacity: 1 !important;
+}
+
+.contact-info {
+  color: var(--link) !important;
+}
+
+.contact-info i {
+  font-size: 1.5em !important;
+  margin-right: 10px !important;
+  color: var(--text-link) !important;
+}
+
+.contact-info.phone i {
+  color: var(--text-link) !important;
+}
+
+.contact-info.email i {
+  color: var(--text-link) !important;
+}
+
+#footerAdmin {
+  margin-top: 0px !important;
+  background-color: var(--color3) !important;
+}
+
+.textFooter {
+  color: var(--text-footer) !important;
+  font-family: var(--font-text) !important;
+  font-size: 14px !important;
+  text-decoration: none !important;
+}
+
+.subTitleFooter {
+  color: var(--text-footer) !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: bolder !important;
+  font-size: 18px !important;
+  text-decoration: none !important;
+}
+
+#logoFooter {
+  max-width: none !important;
+  margin-top: 5%;
+  margin-right: 5%;
+  margin-left: 5%;
+  width: 65% !important;
+  border: none;
+}
+
+.btn2 {
+  background-color: transparent !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  display: flex;
+  padding: 6px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px !important;
+  border: 1px solid var(--color1) !important;
+  color: var(--color2) !important;
+  transition: background-color 0.3s ease, border-color 0.3s ease !important;
+}
+
+.btn2:hover {
+  background-color: var(--color1) !important;
+  color: var(--link) !important;
+}
+
+
+
+.btn3 {
+  background-color: var(--color6) !important;
+  font-family: "Montserrat", sans-serif !important;
+  color: var(--link) !important;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: bolder !important;
+  line-height: 150%;
+  display: flex;
+  padding: 6px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px !important;
+  border: 1px solid var(--color6) !important;
+  transition: background-color 0.3s ease, border-color 0.3s ease !important;
+}
+
+.btn3:hover {
+  color: var(--color6) !important;
+  background-color: transparent !important;
+}
+
+.btn3EN {
+  background-color: var(--color6) !important;
+  font-family: "Montserrat", sans-serif !important;
+  color: var(--link) !important;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: bolder !important;
+  line-height: 150%;
+  display: flex;
+  padding: 6px 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px !important;
+  border: 1px solid var(--color6) !important;
+  transition: background-color 0.3s ease, border-color 0.3s ease !important;
+}
+
+.btn3EN:hover {
+  color: var(--color6) !important;
+  background-color: transparent !important;
+}
+
+.dropdown-toggle::after {
+  border-top-color: var(--link) !important;
+  /* Cambia "red" al color que desees */
+}
+
+.owl-next {
+  display: none !important;
+}
+
+.owl-prev {
+  display: none !important;
+}
+
+.owl-stage {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.card-body {
+  position: relative;
+}
+
+.imgKnife {
+  transition: opacity 0.3s ease;
+}
+
+.btn-container {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card:hover .btn-container {
+  display: block;
+  opacity: 1;
+}
+
+.card:hover .imgKnife {
+  opacity: 0.5;
+  /* Al pasar el ratón sobre la tarjeta, la imagen se volverá un poco opaca */
+}
+
+/* MEDIA */
+
+@media (min-width: 280px) {
+  .parrafoMayuscula {
+    font-size: 21px !important;
+  }
+
+  .containerLinea {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+
+  .textoNav1 {
+    font-size: 15px !important;
+  }
+
+  .btnAccesoLoginMobile {
+    height: 45px !important;
+    padding: 15px !important;
+    font-size: 13px !important;
+  }
+
+  .tituloNormal {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 15px !important;
+  }
+
+  .tituloAdmin {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 15px !important;
+  }
+
+  .parrafoContacto {
+    text-align: start;
+  }
+
+  .subtitulo {
+    font-size: 18px;
+  }
+
+  .boton-Login {
+    font-size: 13px !important;
+  }
+
+  .nav-item a {
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    line-height: 150% !important;
+    text-transform: uppercase !important;
+  }
+
+  .btnAccesoLoginMobile {
+    font-size: 10px !important;
+    padding: 5px;
+  }
+
+  /* CONTACTO */
+
+  .tituloFooter {
+    font-size: 20px !important;
+  }
+
+  .bottom-border {
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-radius: 0 !important;
+    border-bottom: 1px solid var(--title-color) !important;
+    background-color: transparent !important;
+  }
+
+  .subtituloContacto {
+    font-size: 17px !important;
+  }
+
+  .parrafoContacto {
+    font-size: 14px !important;
+  }
+
+  .imagenMarca {
+    width: 30px;
+    margin: 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  #logo {
+    width: 13% !important;
+    margin-right: 5% !important;
+    border: none;
+  }
+
+  .paddingHome {
+    position: static !important;
+    padding-top: 10% !important;
+  }
+
+  #logoq {
+    width: 40% !important;
+    margin-right: 5% !important;
+    border: none;
+  }
+
+  .nav-item a {
+    font-size: 25px !important;
+  }
+
+  .text1 {
+    font-size: 30px !important;
+  }
+
+  .titleSection {
+    font-size: 32px !important;
+  }
+
+  .textPrincipalHome {
+    font-size: 50px !important;
+    color: var(--text-link) !important;
+  }
+
+  .icon {
+    width: 3% !important;
+  }
+
+  .subtitle {
+    font-size: 24px !important;
+  }
+
+  .subText {
+    font-size: 21px !important;
+  }
+
+  .minText {
+    font-size: 15px !important;
+  }
+
+  .arrow {
+    width: 2% !important;
+  }
+
+  share-menu {
+    padding-top: 10% !important;
+    padding-bottom: 10% !important;
+  }
+
+  #contactForm {
+    padding-top: 10% !important;
+  }
+
+  .textIcon {
+    margin-top: 10px !important;
+    font-size: 14px;
+  }
+
+  .paddingForm {
+    padding-bottom: 20% !important;
+  }
+
+  #footerAdmin {
+    margin-top: 10% !important;
+    padding: 10px 10px;
+  }
+
+  #logoFooter {
+    margin: 0px !important;
+    width: 65% !important;
+  }
+
+  .iconKnife {
+    width: 30% !important;
+    margin-left: 10px !important;
+  }
+
+  .imgKnife {
+    height: 23rem !important;
+    width: 40rem !important;
+  }
+
+  .imageBio {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+
+  .divTextHome {
+    padding-top: 20% !important;
+  }
+
+  .divTextGallery {
+    margin-left: 8% !important;
+    padding-top: 35% !important;
+  }
+
+  .portadaGaleriaHome {
+    width: 336px !important;
+    height: 60% !important;
+  }
+
+  .card {
+    margin-bottom: 0px !important;
+  }
+}
+
+@media (min-width: 990px) {
+  .nav-link {
+    font-size: 18px !important;
+  }
+
+  .nav-item {
+    margin-right: 5px !important;
+    padding: 5px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-item a {
+    font-size: 16px !important;
+  }
+
+  .btnAccesoLogin {
+    height: 35px !important;
+    padding: 12px !important;
+    font-size: 11px !important;
+  }
+
+  .nav-item {
+    margin-right: 10px !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .nav-item {
+    margin-right: 22px;
+  }
+
+  .margenAlto {
+    margin-top: 90px;
+  }
+
+  .marginLoginBottom {
+    margin-bottom: 50px;
+  }
+
+  #owl-demo .item {
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .btnAccesoLogin {
+    height: 20px !important;
+    padding: 5px !important;
+    font-size: 11px !important;
+  }
+
+  .nav-item {
+    margin-top: 20px;
+    margin-right: 30px;
+  }
+
+  .textoNav1 {
+    font-size: 12px !important;
+  }
+}
