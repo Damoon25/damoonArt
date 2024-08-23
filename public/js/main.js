@@ -48,3 +48,49 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+document.querySelectorAll('.icon').forEach(function (icon) {
+    icon.addEventListener('mouseenter', function () {
+        anime({
+            targets: icon,
+            scale: 1.3,
+            color: '#ffffff', // Cambia el color al pasar el mouse
+            duration: 500,
+            easing: 'easeOutElastic(1, .8)'
+        });
+    });
+
+    icon.addEventListener('mouseleave', function () {
+        anime({
+            targets: icon,
+            scale: 1.0,
+            color: '#ffffff', // Regresa al color original
+            duration: 500,
+            easing: 'easeOutElastic(1, .8)'
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const links = document.querySelectorAll('.nav-link');
+
+    links.forEach(link => {
+        link.addEventListener('mouseover', function () {
+            anime({
+                targets: link,
+                scale: [1, 1.1],
+                duration: 300,
+                easing: 'easeOutQuart'
+            });
+        });
+
+        link.addEventListener('mouseout', function () {
+            anime({
+                targets: link,
+                scale: [1.1, 1],
+                duration: 300,
+                easing: 'easeOutQuart'
+            });
+        });
+    });
+});

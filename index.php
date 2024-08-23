@@ -13,6 +13,7 @@
     <main>
         <div class="home">
             <div class="position-relative">
+                <?php include("banner.php") ?>
                 <?php include("template/header.php") ?>
             </div>
             <div class="container mt-5 paddingTop paddingBottom">

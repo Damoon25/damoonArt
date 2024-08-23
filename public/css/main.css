@@ -4,19 +4,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 /* Nunito Sans */
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-/* raleway */
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+/* Para Titulos */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Luckiest+Guy&family=Righteous&display=swap');
 
 /* VARIABLES */
 
 :root {
   --title-color: #231f20;
   --font-nav: "Montserrat", sans-serif;
-  --font-title: "Nunito Sans", sans-serif;
+  --font-title: "Bangers", sans-serif;
+  --font-header: "Righteous", sans-serif;
   --font-text: "Raleway", sans-serif;
   --section2: #f7f7f7;
   --login: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-  --color1: #d41131;
+  --color1: #E63946;
   --color1b: rgba(11, 36, 27, 0.4);
   --color2: #4dc3a4;
   --color3: #949494;
@@ -225,6 +226,68 @@ table>tbody>tr>td {
 
 /* NAVBAR MENU*/
 
+#navbar {
+  background-color: var(--color1) !important;
+}
+
+.logo {
+  max-height: 80px;
+}
+
+.nav-link {
+  color: var(--link) !important;
+  font-weight: bold;
+}
+
+/* Estilos base para los enlaces del menú */
+.nav-link {
+  position: relative;
+  display: inline-block;
+  color: var(--link);
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: var(--link);
+  transition: width 0.3s ease;
+}
+
+/* Cambio de color y expansión del subrayado al pasar el cursor */
+.nav-link:hover {
+  color: var(--link) !important;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+}
+
+.btnTurnos {
+  background-color: var(--color2);
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+
+.textCanvas {
+  color: var(--color2) !important;
+}
+
+.btnMenu img {
+  max-height: 40px;
+}
+
+/* Offcanvas */
+.offcanvas-header button {
+  color: var(--color2);
+}
+
 .custom-banner {
   background-color: var(--color1) !important;
   color: var(--link) !important;
@@ -250,10 +313,6 @@ table>tbody>tr>td {
 }
 
 .fa-facebook-f {
-  font-size: 22px !important;
-}
-
-.fa-phone {
   font-size: 22px !important;
 }
 
@@ -761,6 +820,9 @@ a:hover {
 .icon {
   width: 10% !important;
   margin: 5px !important;
+  font-size: 1.5rem;
+  transition: transform 0.2s ease-out;
+  cursor: pointer;
 }
 
 .iconFooter {
@@ -1433,6 +1495,7 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 
   .nav-item a {
+    font-family: var(--font-header) !important;
     font-size: 15px !important;
     font-weight: 400 !important;
     line-height: 150% !important;
@@ -1492,7 +1555,7 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 
   .nav-item a {
-    font-size: 25px !important;
+    font-size: 30px !important;
   }
 
   .text1 {
@@ -1603,7 +1666,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 @media (min-width: 1024px) {
   .nav-item a {
-    font-size: 16px !important;
+    font-size: 20px !important;
   }
 
   .btnAccesoLogin {
